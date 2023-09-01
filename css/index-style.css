@@ -1,0 +1,103 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: "segoe ui light";
+}
+
+.item ,#prev , #close , #next
+{
+    cursor: pointer;
+}
+.item
+{
+   
+    margin-bottom: 2rem;
+}
+
+.item-caption
+{
+    background-color: #fff;
+    bottom: 2rem;
+    width: 80%;
+    left: 10%;
+    padding: 0.8rem;
+}
+.item img
+{
+    height: 50vh;
+}
+#lightBoxContainer
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.54);
+    
+}
+#lightBoxItem
+{
+    height: 70vh;
+    width: 50%;
+    background-image: url(../imges/Landscapes_railroad_tracks_railroads_1920x1200.jpg);
+    background-size: 100% 100%;
+
+}
+
+/* @media (max-width: 750px){
+    #lightBoxItem{
+        width:70%;
+    }
+}
+@media (min-width : 751) and (max-width: 850px ) {
+    #lightBoxItem{
+        width:60%;
+    }
+} */
+
+#close
+{
+    top: 1rem;
+    right: 1rem;
+}
+#prev , #close , #next
+{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+@media (max-width: 576px) {
+    #lightBoxItem{
+        width: 70%;
+
+    }
+    #prev , #close , #next{
+        font-size: 1rem;
+    
+    }
+    }
+@media (min-width: 577px) and (max-width: 768px){
+    #lightBoxItem{
+            width: 65%;
+            padding: 5px;
+        }
+        #prev , #close , #next{
+            font-size: 1.2rem;
+        
+        }
+    }
+@media  (min-width:769px) and (max-width:1200px)
+{
+    #lightBoxItem
+    {
+        width: 55%;
+    }
+}
+
